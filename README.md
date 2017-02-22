@@ -1,3 +1,73 @@
+
+
+
+＃ PSD.rb
+
+[！[Travis CI]（https://travis-ci.org/layervault/psd.rb.png?branch=master）]（https://travis-ci.org/layervault/psd.rb）
+
+Rubyで書かれた一般的なPhotoshopファイルパーサーです。これを使用すると、管理可能なツリー構造でPhotoshopドキュメントを操作し、次のような重要なデータを見つけることができます。
+
+* 文書構造
+* ドキュメントサイズ
+* レイヤー/フォルダーサイズ+位置決め
+* レイヤー/フォルダー名
+* レイヤー/フォルダの可視性と不透明度
+* フォントデータ（[psd-enginedata]（https://github.com/layervault/psd-enginedata）経由）
+  * テキストエリアの内容
+  * フォント名、サイズ、色
+* カラーモードとビット深度
+* ベクトルマスクデータ
+* フラット化された画像データ
+* レイヤーコンプ
+
+PSD.rbは以下に対してテストされています：
+
+* MRI 1.9.3,2.0.0,2.1.0
+* JRuby（1.9.3モード）
+
+MRI Rubyを使用しており、ネイティブコードでPSD.rbを大幅に高速化することに興味がある場合は、[psd_native]（https://github.com/layervault/psd_native）を参照してください。
+
+## インストール
+
+この行をアプリケーションのGemfileに追加します：
+
+    gem 'psd'
+
+そして、以下を実行します：
+
+    $ bundle
+
+または、自分でインストールしてください：
+
+    $ gem install psd
+
+＃＃ 使用法
+
+[完全なソースコードのドキュメント]（http://rubydoc.info/gems/psd/frames）が利用可能ですが、PSDデータを使用してアクセスするための一般的な方法がいくつかあります：
+
+### PSDを読み込む
+
+``ルビー
+
+----------------------------------///----
+--/-/-///-------/--/--11111-------://
+---------11-111111-111111111----------
+--/////------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PSD.rb
 
 [![Travis CI](https://travis-ci.org/layervault/psd.rb.png?branch=master)](https://travis-ci.org/layervault/psd.rb)
